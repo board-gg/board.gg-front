@@ -250,7 +250,7 @@ const InputBox = styled.div`
     border-bottom: 1px solid ${color.text.secondary};
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     gap: 8px;
@@ -264,6 +264,7 @@ const Input = styled.input`
     ${font.D5};
     font-size: 16px;
     padding: 12px 0px;
+    width : 70%;
     color: ${color.text.primary};
 
     &::placeholder {
@@ -326,11 +327,11 @@ const SmallButton = styled.button`
     border: none;
     border-radius: 8px; 
     background-color: ${color.primary};
-    padding: 8px 12px;
     height: 32px;
     white-space: nowrap;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    padding : 4px;
 
     &:hover:not(:disabled) {
         background-color: #4383ccff;

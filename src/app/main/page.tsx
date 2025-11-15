@@ -2,21 +2,18 @@
 
 import styled from "@emotion/styled";
 
-import LoginForm from "../components/login/loginform";
-
-const Login = () => {
+const Main = () => {
 
     return(
-        <LoginLayout>
-            <LoginForm />
-        </LoginLayout>
+        <MainLayout>
+        </MainLayout>
     )
 
 }
 
-export default Login;
+export default Main;
 
-const LoginLayout = styled.div`
+const MainLayout = styled.div`
     max-width : 600px;
     width : 100%;
     background-color : white;

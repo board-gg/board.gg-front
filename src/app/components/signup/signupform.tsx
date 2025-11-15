@@ -21,4 +21,5 @@ const SignupFormLayout = styled.div`
     border : 1px solid ${color.text.secondary};
     border-radius : 12px;
     padding : 12px;
+    
 `

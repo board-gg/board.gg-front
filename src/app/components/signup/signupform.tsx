@@ -58,7 +58,6 @@ const SignupForm = () => {
                 throw error;
             }
 
-            console.log('OTP 발송 성공:', data);
             setIsCodeSent(true);
             alert('인증번호가 발송되었습니다. 이메일을 확인해주세요.');
             
@@ -103,7 +102,6 @@ const SignupForm = () => {
                 throw new Error('인증번호가 일치하지 않습니다.');
             }
 
-            console.log('OTP 검증 성공:', verifyData);
 
 
             const { data: updateData, error: updateError } = await supabase.auth.updateUser({
@@ -118,7 +116,6 @@ const SignupForm = () => {
                 throw updateError;
             }
 
-            console.log('사용자 정보 업데이트 성공:', updateData);
 
             alert('회원가입이 완료되었습니다!');
             window.location.href = '/login';

@@ -5,7 +5,7 @@ export const color = {
     surface: '#FFFFFF',
     text: {
       primary: '#1A1A1A',
-      secondary: '#666666',
+      secondary: '#d3d3d3ff',
       disabled: '#999999',
       white: '#FFFFFF',
     },
